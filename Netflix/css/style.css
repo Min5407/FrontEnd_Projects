@@ -119,8 +119,8 @@ img{
       0 0 0 0 0
       horizontal, vertical, blur , spread(from all corners),  color
    */
-   box-shadow: inset 120px 100px 250px  #000000, inset -120px -100px 250px #000000;
-   /* animation: shadow 2s ease-in reverse; */
+   box-shadow: inset 110px 90px 250px  #000000, inset -110px -90px 250px #000000;
+   animation: shadow 1.3s ease-in reverse;
 }
 
 @keyframes shadow{
