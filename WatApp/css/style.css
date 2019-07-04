@@ -1,0 +1,121 @@
+/* global variables */
+:root {
+   --mainColor: #53c4fb; 
+ }
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Open Sans', sans-serif;
+
+}
+/* global css */
+li{
+   list-style:none;
+}
+a{
+   color: black;
+   text-decoration: none;
+}
+
+.container{
+   max-width: 1200px;
+   margin: 0 auto;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+
+}
+
+/* navbar section */
+header{
+   height: 70vh;
+   background: url("Photo by Fancycrave.com from Pexels") no-repeat center center/cover;
+   position: relative;
+   clip-path: circle(70.0% at 50% 10%);
+   transition: background 0.8s ease-in-out;
+}
+header::after{
+   content: "";
+   display: block;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+
+
+}
+nav{
+   display: flex;
+   position: absolute;
+   width: 1200px;
+   min-width: 800px;
+
+}
+nav ul{
+   flex:1.4;
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   padding: 1rem;
+}
+nav ul li{
+   margin: 1rem;
+   padding: 1rem;
+   text-transform: uppercase;
+   
+}
+
+nav ul li a{
+  color: #ccc;
+}
+nav ul li a:hover{
+   transition: color 0.2s ease-in-out;
+  color: var(--mainColor);
+}
+#logo{
+   flex:0.6;
+   padding: 1rem;
+   text-align: left;
+  
+}
+#photographer{
+   position: absolute;
+   color: #ccc;
+   left:50%;
+   transform: translate(-50%,-50%);
+   bottom: 0;
+   transition: all 2s ease-in-out;
+
+}
+#headercontent{
+   color: #ccc;
+   padding: 1rem;
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+}
+#headercontent h3{
+   margin: 1rem;
+   padding: 1rem;
+}
+#headercontent span{
+   color: #53c4fb;   
+}
+#headercontent a{
+   display: inline-block;
+   color: var(--mainColor);
+   padding: 1rem;
+   border-radius: 15px;
+   border: 2px #fff solid;
+}
+#headercontent a:hover{
+   color: #fff;
+   border: 2px #444 solid;
+   background-color: var(--mainColor);
+   transition: all 0.5s ease-in-out;   
+}
+
+
