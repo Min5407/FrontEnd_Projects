@@ -33,7 +33,8 @@ header{
    height: 70vh;
    background: url("Photo by Fancycrave.com from Pexels") no-repeat center center/cover;
    position: relative;
-   clip-path: circle(70.0% at 50% 10%);
+   border-radius: 0 0 40% 40%;
+   overflow: hidden;
    transition: background 0.8s ease-in-out;
 }
 header::after{
@@ -118,4 +119,9 @@ nav ul li a:hover{
    transition: all 0.5s ease-in-out;   
 }
 
+/* recomendation section */
+#recommendation{
+   display: flex;
+   flex-direction: row-reverse;
+}
 
